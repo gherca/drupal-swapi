@@ -1,0 +1,6 @@
+swapi.admin:
+  title: 'SWApi'
+  description: 'swapi description'
+  parent: system.admin_config_development
+  route_name: swapi.content
+  weight: 100

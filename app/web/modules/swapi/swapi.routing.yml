@@ -1,0 +1,7 @@
+swapi.content:
+  path: '/swapi'
+  defaults:
+    _controller: '\Drupal\swapi\Controller\SWApiController::content'
+    _title: 'SWAPI Peoples'
+  requirements:
+    _permission: 'access content'

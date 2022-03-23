@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation to print Lorem ipsum text.
+ *
+ * Available variables:
+ *   - source_text
+ *
+ * @see template_preprocess_loremipsum()
+ *
+ * @ingroup themeable
+ */
+#}
+<table id="peoples">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Home planet</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for people in peoples %}
+    <tr>
+      <td>{{ people.name }}</td>
+      <td>{{ people.gender }}</td>
+      <td>{{ people.homePlanet }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

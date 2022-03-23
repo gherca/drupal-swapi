@@ -1,0 +1,9 @@
+services:
+  swapi.controller:
+    class: Drupal\swapi\Controller\SWApiController
+  swapi.cache:
+    class: Drupal\swapi\Service\SWApiCache
+    arguments: [ '@cache.data' ]
+  swapi.service:
+    class: Drupal\swapi\Service\SWApiService
+    arguments: [ '@http_client', '@swapi.cache' ]
